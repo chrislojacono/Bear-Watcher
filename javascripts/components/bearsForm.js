@@ -10,7 +10,7 @@ const makeBearsForm = () => {
       <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Add Name of Bear">
     </div>
     <div class="form-group">
-      <label for="imageUrl">Password</label>
+      <label for="imageUrl">Add IMage URL of the Bear</label>
       <input type="text" class="form-control" id="imageUrl"" placeholder="Image Url">
     </div>
     

@@ -7,7 +7,9 @@ const addBears = () => {
 
     bearsArray.push({
         name: name,
-        imageUrl: imageUrl
+        imageUrl: imageUrl,
+        attempted: 0,
+        total: 0
     });
 
     makeRiver(bearsArray);

@@ -27,7 +27,7 @@ const makeRiver = () => {
                 <h6 id="time">Last Caught</h6>
                 <b id="timeStamp-${index}">${item.dateTime}</b>
                 <h6 id="totalTitle">Total Fish Caught</h6>
-                <b id="totalCount"></b>
+                <b id="totalCount-${index}">${item.total}</b>
 
            
         </div>

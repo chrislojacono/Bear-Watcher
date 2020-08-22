@@ -13,13 +13,13 @@ const addBears = () => {
     });
 
     makeRiver(bearsArray);
-    console.log(bearsArray);
+    
     $("#name").val("");
     $("#imageUrl").val("");
 
 }
 
-// https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/GrizzlyBearJeanBeaufort.jpg/1024px-GrizzlyBearJeanBeaufort.jpg
+
 
 
 

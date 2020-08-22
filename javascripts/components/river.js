@@ -15,6 +15,7 @@ const makeRiver = () => {
             </div>
             <div class="progressButtons">
                 <button id="attempted">Attempted</button>
+                <b id="attempt-${index}">${item.attempted}</b>
                 <button id="attempted">Caught</button>
             </div
             <div class="counters">

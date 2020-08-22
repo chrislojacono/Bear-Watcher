@@ -24,7 +24,7 @@ const makeRiver = () => {
                 <button class="btn btn-success" id="caught-${index}">Caught</button>
             </div
             <div class="counters">
-                <h6 id="time">Last Caught</h6>
+                <h6 id="time">Last Caught At:</h6>
                 <b id="timeStamp-${index}">${item.dateTime}</b>
                 <h3 id="totalTitle">Total Fish Caught</h3>
                 <b class="total" id="totalCount-${index}">${item.total}</b>

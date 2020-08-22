@@ -9,7 +9,8 @@ const addBears = () => {
         name: name,
         imageUrl: imageUrl,
         attempted: 0,
-        total: 0
+        total: 0,
+        dateTime: ''
     });
 
     makeRiver(bearsArray);

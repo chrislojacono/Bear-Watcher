@@ -1,14 +1,7 @@
 import { bearsArray } from "../../helpers/data/bearsArray.js";
 import { makeRiver } from "./river.js";
 
-const attemptedTally = (array, index) =>{
-    
-    $(`#attempted-${index}`).on('click', ()=> {
-    array.attempted++
-    $(`attempt-${index}`).html(`${array.attempted}`)
-    makeRiver();
-    })
-}
+
 const dateTime = () =>{
     const today = new Date();
     const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
@@ -17,13 +10,17 @@ const dateTime = () =>{
   const timeEvent = (array, index)  =>{
     $(`#attempted-${index}`).on('click', ()=> { 
         bearsArray[index].dateTime = dateTime()
-        
+        bearsArray[index].attempted++
         $(`#timeStamp-${index}`).html(`${dateTime()}`)
-        
+        $(`attempt-${index}`).html(`${bearsArray[index].attempted}`)
       makeRiver(array[index])
   })
-  $(`#caught-${index}`).on('click', ()=> { 
+  $(`#caught-${index}`).on('click', ()=> {
+    bearsArray[index].dateTime = dateTime()
+    bearsArray[index].total++ 
     $(`#timeStamp-${index}`).html(`${dateTime()}`)
+    
+    $(`#totalCount-${index}`).html(`${bearsArray[index].total}`)
     makeRiver(array[index])
   
   })
@@ -32,4 +29,4 @@ const dateTime = () =>{
 
 
 
-export { attemptedTally, dateTime, timeEvent }
+export { dateTime, timeEvent }

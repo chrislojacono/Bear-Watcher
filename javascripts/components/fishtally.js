@@ -13,13 +13,12 @@ const dateTime = () =>{
         bearsArray[index].attempted++
         $(`#timeStamp-${index}`).html(`${dateTime()}`)
         $(`attempt-${index}`).html(`${bearsArray[index].attempted}`)
-      makeRiver(array[index])
+        makeRiver(array[index])
   })
   $(`#caught-${index}`).on('click', ()=> {
     bearsArray[index].dateTime = dateTime()
     bearsArray[index].total++ 
     $(`#timeStamp-${index}`).html(`${dateTime()}`)
-    
     $(`#totalCount-${index}`).html(`${bearsArray[index].total}`)
     makeRiver(array[index])
   

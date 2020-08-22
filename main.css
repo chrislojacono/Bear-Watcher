@@ -1,13 +1,56 @@
 #river {
-    margin: 0 auto;
+  margin: 0 auto;
+  background-image: url(./assets/images/river2.jpg);
+  background-position: center;
+  justify-content: center;
+  
+}
+body {
+  font-family: "Bebas Neue", cursive;
+  background-color: #5b9279;
 }
 
-
 .img-container {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-  }
-  .card{
-      text-align: center;
-  }
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+.card {
+  text-align: center;
+  margin: 10px;
+}
+.total {
+  font-size: 30px;
+}
+.mainTitleDiv {
+  background-color: #5b9279;
+}
+.mainTitle {
+  font-size: 100px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+#time {
+  text-align: left;
+  text-decoration: underline;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+button {
+  margin: 0px 30px;
+}
+#submit {
+  height: 40px;
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+form {
+  display: block;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,6 +1,6 @@
 import { bearsArray } from "../../helpers/data/bearsArray.js";
-import { timeEvent, dateTime  } from './fishtally.js';
-import { addBears } from "./addBears.js";
+import { timeEvent } from './fishtally.js';
+
 
 
 
@@ -15,19 +15,19 @@ const makeRiver = () => {
         </div>
             
             <div class="card-body">
-              <h2 class="card-title">${item.name}</h2>
+              <h1 class="card-title">${item.name}</h1>
               <p class="card-text"></p>
             </div>
             <div class="progressButtons">
-                <button id="attempted-${index}">Attempted</button>
+                <button class="btn btn-warning" id="attempted-${index}">Attempted</button>
                 <b id="attempt-${index}">${item.attempted}</b>
-                <button id="caught-${index}">Caught</button>
+                <button class="btn btn-success" id="caught-${index}">Caught</button>
             </div
             <div class="counters">
                 <h6 id="time">Last Caught</h6>
                 <b id="timeStamp-${index}">${item.dateTime}</b>
-                <h6 id="totalTitle">Total Fish Caught</h6>
-                <b id="totalCount-${index}">${item.total}</b>
+                <h3 id="totalTitle">Total Fish Caught</h3>
+                <b class="total" id="totalCount-${index}">${item.total}</b>
 
            
         </div>

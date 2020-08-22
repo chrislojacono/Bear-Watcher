@@ -1,5 +1,6 @@
 import { addBears } from './addBears.js'
 import { makeRiver } from './river.js';
+import { bearsArray } from '../../helpers/data/bearsArray.js';
 
 
 const makeBearsForm = () => {
@@ -24,7 +25,7 @@ const makeBearsForm = () => {
         const name = $("#name").val();
         const imageUrl = $("#imageUrl").val();
         if (name != undefined && imageUrl != undefined) {
-            addBears();
+            addBears(bearsArray);
         }
 
     });

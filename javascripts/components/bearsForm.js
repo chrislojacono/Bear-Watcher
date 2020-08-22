@@ -7,11 +7,11 @@ const makeBearsForm = () => {
 
     const BearsForm = `<form>
     <div class="form-group">
-      <label for="addName">Add Name</label>
+      <label id="addName" for="addName">Add Name</label>
       <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Add Name of Bear">
     </div>
     <div class="form-group">
-      <label for="imageUrl">Add IMage URL of the Bear</label>
+      <label id="addImage" for="imageUrl">Add Image URL of the Bear</label>
       <input type="text" class="form-control" id="imageUrl"" placeholder="Image Url">
     </div>
     
